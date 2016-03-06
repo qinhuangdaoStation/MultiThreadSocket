@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  
+    <!-- 定义一个文本框，他用于接收用户的输入 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <EditText 
+          android:id="@+id/edt_input"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:hint="请输入聊天内容"/>
+      <Button 
+          android:id="@+id/btn_send"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="发送"/>
+    </LinearLayout>
+
+    <!-- 定义一个文本框，它用于显示来自服务器的信息 -->
+    <TextView 
+        android:id="@+id/txt_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:background="#ffff"
+        android:text="聊天内容显示在这里"
+        android:textSize="14dp"
+        android:textColor="#f000"/>
+</LinearLayout>
